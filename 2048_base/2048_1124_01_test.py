@@ -12,3 +12,8 @@ def get_user_action(keyboard):
         char = keyboard.getch()
     return action_dict[char]
 
+def move_left_possible(row):
+    pass
+
+check = {}
+check['Left'] = lambda field: any(move_left_possible(row) for row in field)

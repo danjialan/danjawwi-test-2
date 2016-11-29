@@ -170,13 +170,6 @@ class GameField(keyboard):
                 cast(help_string1)
         cast(help_string2)
 
-
-
-
-
-
-
-
     def move(self,direction):
 
         moves = {}
@@ -227,24 +220,3 @@ class GameField(keyboard):
                 assert  len(new_row)==len(row)
                 return new_row
             return tighten(merge(tighten(row)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

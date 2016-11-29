@@ -130,14 +130,65 @@
 #
 # print((list(list(a) for a in zip(*a))))
 # print([list(row[::-1]) for row in a])
+#
+# def list1(a,b):
+#     L = []
+#     for i in range(a):
+#         for j in range(b):
+#             L.append((i,j))
+#     return L
+#
+# lista = list1(4,4)
+#
+# print(lista)
+#
+# def is_win(self):
+#     return (any(i >= self.heighscore for i in row)for row in self.field)
+#
+# def is_gameover(self):
+#     return any(self.move_is_possible(direction) for direction in actions)
+#
+# def move_is_possible(self,direction):
+#     def move_left_possible_only_row(row):
+#         def only_row_function(i):
+#             if row[i] == 0 and row[i+1] != 0:
+#                 return True
+#             if row[i] == row[i+1]:
+#                 return True
+#             return False
+#         return any(only_row_function(i) for i in range(len(row) - 1))
+#
+#     check = {}
+#     check['Left']=lambda field :
 
-def list1(a,b):
-    L = []
-    for i in range(a):
-        for j in range(b):
-            L.append((i,j))
-    return L
+# w = 's<5'
+# a = ('|{: ^5}'.format(s) if s >=5 else '|{: ^6}'.format(w) for s in range(10))
+# b = ''.join(a)
+#
+# print(type(a))
+# print(a)
+# print(type(b))
+# print(b)
 
-lista = list1(4,4)
+# type(5>6)
+# print(not 5>6)
+from random import choice
+a = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]]
+(i,j) = choice([(i,j) for i in range(4) for j in range(4) if a[i][j] == 0])
+b = ((i,j) for i in range(4) for j in range(4) if a[i][j] == 0)
+c = list(b)
+d = [b]
+print(type(b))
+print(b)
+print(type((i,j)))
+print((i,j))
+print(type(c))
+print(c)
+print(type(d))
+print(d)
 
-print(lista)
+
+
+
+
+
